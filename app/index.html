@@ -8,8 +8,6 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans'
-    rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -29,36 +27,44 @@
         to improve your experience.
       </p>
     <![endif]-->
-   <section>
-    <div id="header">
-      <img src="/images/logo.jpg" alt="Logo">
-      <i class="fa fa-chevron-down"></i>
-    </div>
-      <img src="/images/parallax_1.jpg" alt="Parallax 1">
-    <section>
+    <header>
+      <img src="/images/logo.png" alt="Logo">
+      <a href="#about" class="bounce animated infinite">
+        <i class="fa fa-chevron-down"></i>
+      </a>
+    </header>
 
-      <h1>Marmer Butik</h1>
-      <p>
-        Somos uma empresa especialisada com importação de Cubas para banheiro em Mármore e Pedras naturais de rio em vários formatos e diferentes origens.
-        Solicite agora o seu catalogo.
-      </p>
+    <section id="about">
+      <div class="container">
+        <h1>Marmer Butik</h1>
+        <p>
+          Somos uma empresa especialisada com importação de Cubas para banheiro em
+          Mármore e Pedras naturais de rio em vários formatos e diferentes
+          origens. Solicite agora o seu catalogo.
+        </p>
 
-      <p>
-        Compre pias e cubas para banheiro. Cubas importadas em mármore e em pedras naturais em vários formatos e tamanhos do rústico ao moderno. Confira nossos preços.
-      </p>
+        <p>
+          Viajamos pelo mundo constantemente em busca de novidades a fim de trazer
+           a você produtos exclusivos e de alto padrão.
+        </p>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illo,
-        ad magnam aut quia tempore dolores aliquam error commodi eaque, vero
-        totam, debitis temporibus ea qui optio incidunt quos obcaecati.
-      </p>
+        <p>
+          Compre pias e cubas para banheiro. Cubas importadas em mármore e em
+          pedras naturais em vários formatos e tamanhos do rústico ao moderno.
+          Confira nossos preços.
+        </p>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illo,
-        ad magnam aut quia tempore dolores aliquam error commodi eaque, vero
-        totam, debitis temporibus ea qui optio incidunt quos obcaecati.
-      </p>
-      <ul>
+        <p>
+          É um orgulho ter a oportunidade de servir pessoas que sabem apreciar as
+          belezas naturais na realização de sua obra.
+
+        </p>
+
+        <p>
+          Marmer Butik elegância em Mármore e Pedras Naturais.
+        </p>
+      </div>
+      <ul class="float">
         <li><img src="/images/img01.jpg" alt="Sink 1"></li>
         <li><img src="/images/img02.jpg" alt="Sink 2"></li>
         <li><img src="/images/img03.jpg" alt="Sink 3"></li>
@@ -66,52 +72,45 @@
       </ul>
     </section>
 
-    <section></section>
-
     <section>
       <img src="/images/parallax_2.jpg" alt="Parallax 2">
     </section>
 
     <section>
-      <div id="contactForm">
-        <h2> Entre em contato </h2>
+      <div class="container">
+        <h2>Entre em contato</h2>
         <p>
-          Deixe sua menssagem que entraremos em contato com voce.
+          Deixe sua menssagem que entraremos em contato com voçê.
         </p>
-        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-          <div class="row">
-            <label for="name">Seu nome:</label><br />
-            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-          </div>
-          <div class="row">
-            <label for="email">Seu email:</label><br />
-            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-          </div>
-          <div class="row">
-            <label for="message">Sua mensagem:</label><br />
-            <textarea id="message" class="input" name="message" rows="7" cols="30">
-            </textarea><br />
-          </div>
-          <input id="submit_button" type="submit" value="Enviar" />
-       </form>
+        <form action="//formspree.io/leonardopeta@live.co.uk" method="POST">
+          <div><input name="name" type="text" placeholder="Nome"></div>
+          <div><input name="email" type="text" placeholder="Email"></div>
+          <div><textarea name="message" placeholder="Menssagem"></textarea></div>
+          <button type="submit">
+            <i class="fa fa-paper-plane"></i> ENVIAR
+          </button>
+        </form>
       </div>
     </section>
 
     <footer>
-      <i class="fa fa-facebook-official"></i>
-      <i class="fa fa-instagram"></i>
-      <i class="fa fa-youtube"></i>
-      <i class="fa fa-google-plus"></i>
-
-      <p>
-        Telefones (43)9690-4020 ou (43)3423-8394<br>
-        marmerbutik@gmail.com
-      </p>
-
-      <div>
-      <p>
+      <div class="container">
+        <ul class="m-b-20">
+          <li><a href="tel:4396904020">(43)9690-4020</a></li>
+          <li><a href="tel:4334238394">(43)3423-8394</a></li>
+          <li>
+            <a href="mailto:marmerbutik@gmail.com">marmerbutik@gmail.com</a>
+          </li>
+        </ul>
+        <ul class="float">
+          <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <div class="copyright">
         &copy;2015 Marmer Butik, All rights reserved.
-      </p>
       </div>
     </footer>
 

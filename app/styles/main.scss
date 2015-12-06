@@ -1,57 +1,8 @@
 // bower:scss
-@import "../bower_components/fontawesome/scss/font-awesome.scss";
+@import "bower_components/open-sans/scss/open-sans.scss";
+@import "bower_components/fontawesome/scss/font-awesome.scss";
 // endbower
 
 @import "variables";
-
 @import "browserupgrade";
-
-$darkgrey: #616161;
-$lighrgrey: #868686;
-$backgroundgrey: #DAD4C6;
-
-
-#header
-{
-  background-color:$backgroundgrey;
-}
-
-
-body
-{
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1
-{
-  font-size: 3em;
-  color: $darkgrey;
-
-}
-
-h2
-{
-  font-size: 2em;
-  color: $darkgrey;
-
-}
-
-p{
-
-  color: $lighrgrey;
-}
-
-
-
-footer
-{
-  background-color:$grey;
-
-}
-
-footer p
-{
-  color: #3b3229;
-}
-
+@import "general.scss";

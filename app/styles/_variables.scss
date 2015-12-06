@@ -1,2 +1,15 @@
-$black: #000;
-$grey:  #CCC;
+// Grays
+$dark-grey:  #888;
+$grey:       #DDD;
+$light-grey: #CCC;
+
+// Blues
+$dark-blue: #445;
+
+// Brows
+$brown: #432;
+$light-brown: lighten($brown, 15%);
+$extra-light-brown: lighten($brown, 70%);
+
+//white
+$white: #fff;
