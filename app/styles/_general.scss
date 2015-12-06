@@ -64,15 +64,19 @@ ul.float {
 }
 
 header {
-  height: 100vw;
-  background-position: cover;
-  background-repeat: no-repeat;
-  background-image: url('../images/parallax_1.jpg');
+  height: 100vh;
+
+  background: url('../images/parallax_2.png') no-repeat center center fixed;
+
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 
   a {
     color: $brown;
     display: block;
-    margin-top: -150px;
+    margin-top: -110px;
     @include transition(color .3s ease-in-out);
   }
 
