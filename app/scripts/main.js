@@ -2,15 +2,42 @@
 
   'use strict';
 
-  $('.close-menu').on('click', function(e) {
-    e.preventDefault();
-    $('body').removeClass('in');
+  // Carousel
+  var items = [{
+    id: 1,
+    title: 'Pia 1',
+    description: 'Pia super legal'
+  }, {
+    id: 2,
+    title: 'Pia 2',
+    description: 'Pia super legal'
+  }, {
+    id: 3,
+    title: 'Pia 3',
+    description: 'Pia super legal'
+  }, {
+    id: 4,
+    title: 'Pia 4',
+    description: 'Pia super legal'
+  }, {
+    id: 5,
+    title: 'Pia 5',
+    description: 'Pia super legal'
+  }];
+
+
+  var html = items.map(function(item) {
+    return '' +
+      '<div>' +
+        '<img src="/images/carousel/car_' + item.id + '.png"' +
+             'alt="' + item.title + '"' +
+             'data-id="' + item.id + '">' +
+      '</div>';
+  }).reduce(function(a, b) {
+    return a + b;
   });
 
-  $('.open-menu').on('click', function(e) {
-    e.preventDefault();
-    $('body').addClass('in');
-  });
+  $('.carousel').html(html);
 
   $('.carousel').slick({
     dots: false,
@@ -36,6 +63,87 @@
         slidesToShow: 1
       }
     }]
+  });
+
+  function bindInfo(id) {
+    var item = items.filter(function(row) {
+      return +row.id === +id;
+    })[0];
+
+    var html = '' +
+      '<h2>' + item.title + '</h2>' +
+      '<img src="/images/carousel/car_' + id + '.png" alt="' + item.title + '">' +
+      '<p>' + item.description + '</p>';
+
+    $('.popup .content').html(html);
+  }
+
+  // Popup toggler
+  $('.slick-slide').on('click', 'img', function(e) {
+    e.preventDefault();
+    bindInfo($(this).data('id'));
+    $('body').removeClass().addClass('pop-open');
+  });
+
+  $('.close-popup').on('click', function(e) {
+    e.preventDefault();
+    $('body').removeClass();
+  });
+
+  // The menu toggler
+  $('.close-menu').on('click', function(e) {
+    e.preventDefault();
+    $('body').removeClass();
+  });
+
+  $('.open-menu').on('click', function(e) {
+    e.preventDefault();
+    $('body').addClass('in');
+  });
+
+  // Form submission
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+
+    $('input[name="name"]').removeClass('error');
+    $('input[name="email"]').removeClass('error');
+    $('textarea[name="message"]').removeClass('error');
+
+    var name = $('input[name="name"]').val();
+    var email = $('input[name="email"]').val();
+    var message = $('textarea[name="message"]').val();
+
+    if(name.length > 0 && email.length > 0 && message.length > 0) {
+      var formData = {
+        name: name,
+        email: email,
+        message: message
+      };
+
+      $.ajax({
+        url: '//formspree.io/leonardopeta@live.co.uk',
+        method: 'POST',
+        data: formData,
+        dataType: 'json'
+      }).done(function() {
+        $('form').hide();
+        $('.form-success').show();
+      }).error(function() {
+        $('form').hide();
+        $('.form-error').show();
+      });
+    }
+    else {
+      if(name.length < 1) {
+        $('input[name="name"]').addClass('error');
+      }
+      if(email.length < 1) {
+        $('input[name="email"]').addClass('error');
+      }
+      if(message.length < 1) {
+        $('textarea[name="message"]').addClass('error');
+      }
+    }
   });
 
 })();

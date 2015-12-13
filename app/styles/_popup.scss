@@ -1,0 +1,30 @@
+.pop-open .popup {
+  top: 0;
+  opacity: 1;
+}
+
+.popup {
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  top: -2000px;
+  height: 100%;
+  padding: 20px;
+  color: $white;
+  position: fixed;
+  box-sizing: border-box;
+  background: $transparent-brown;
+  transition: all .3s ease-in-out;
+
+  a {
+    color: $white;
+    display: block;
+    text-align: right;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: $extra-light-brown;
+  }
+}
