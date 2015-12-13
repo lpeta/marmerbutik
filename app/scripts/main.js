@@ -70,12 +70,12 @@
       return +row.id === +id;
     })[0];
 
-    var html = '' +
+    var innerHtml = '' +
       '<h2>' + item.title + '</h2>' +
       '<img src="/images/carousel/car_' + id + '.png" alt="' + item.title + '">' +
       '<p>' + item.description + '</p>';
 
-    $('.popup .content').html(html);
+    $('.popup .content').html(innerHtml);
   }
 
   // Popup toggler
