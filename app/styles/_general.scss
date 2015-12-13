@@ -62,19 +62,17 @@ ul.float {
     float: left;
 
     a {
-      padding: 30px;
+      padding: 0 30px;
     }
   }
 }
 
-.carousel {
-  // todo
+section {
+  height: 100vh;
 }
 
 header {
-  height: 100vh;
-
-  background: url('../images/parallax_1.png') no-repeat center center fixed;
+  background: url('../images/parallax.png') no-repeat center center fixed;
 
   background-size: cover;
   -o-background-size: cover;
