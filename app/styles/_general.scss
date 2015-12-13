@@ -67,11 +67,10 @@ ul.float {
   }
 }
 
-section {
-  height: 100vh;
-}
-
 header {
+  height: 100vh;
+  overflow: hidden;
+
   background: url('../images/parallax.png') no-repeat center center fixed;
 
   background-size: cover;
@@ -97,23 +96,6 @@ header {
   }
 }
 
-footer {
-  color: $brown;
-  background: $extra-light-brown;
-
-  ul {
-    width: 430px;
-    margin: 0 auto;
-
-    li {
-      a {
-        padding: 5px;
-        display: block;
-      }
-    }
-  }
-}
-
 .container {
   padding: 20px;
   margin: 0 auto;
@@ -126,12 +108,4 @@ footer {
 
 .fa {
   font-size: 3em;
-}
-
-.copyright{
-  padding: 5px;
-  color: $white;
-  margin: 0 auto;
-  font-size: 0.8em;
-  background: $brown;
 }

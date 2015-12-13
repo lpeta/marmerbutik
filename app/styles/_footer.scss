@@ -1,0 +1,50 @@
+footer {
+  color: $brown;
+  background: $extra-light-brown;
+
+  ul {
+    width: 430px;
+    margin: 0 auto;
+
+    li {
+      a {
+        padding: 5px;
+        display: block;
+      }
+    }
+  }
+}
+
+.copyright{
+  padding: 5px;
+  color: $white;
+  margin: 0 auto;
+  font-size: 0.8em;
+  background: $brown;
+}
+
+@media screen and (max-width: 450px) {
+  footer {
+    ul {
+      width: auto;
+    }
+
+    ul.float {
+      width: auto;
+      display: flex;
+
+      li {
+        float: none;
+        flex-grow: 1;
+
+        a {
+          padding: 0;
+
+          .fa {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
