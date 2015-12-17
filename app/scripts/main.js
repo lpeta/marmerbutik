@@ -5,24 +5,25 @@
   // Carousel
   var items = [{
     id: 1,
-    title: 'Pia 1',
-    description: 'Pia super legal'
+    title: '1',
+    description: 'Cuba esculpida em pedra natural de rio.'
   }, {
     id: 2,
-    title: 'Pia 2',
-    description: 'Pia super legal'
+    title: '2',
+    description: 'Cuba esculpida em pedra natural de rio.'
   }, {
     id: 3,
-    title: 'Pia 3',
-    description: 'Pia super legal'
+    title: '3',
+    description: 'Cuba esculpida em pedra natural de rio.'
   }, {
     id: 4,
-    title: 'Pia 4',
-    description: 'Pia super legal'
+    title: '4',
+    description: 'Cuba esculpida em pedra natural de rio.'
+
   }, {
     id: 5,
-    title: 'Pia 5',
-    description: 'Pia super legal'
+    title: '5',
+    description: 'Cuba esculpida em pedra natural de rio.'
   }];
 
 
@@ -46,7 +47,7 @@
     autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2100,
     responsive: [{
       breakpoint: 1024,
       settings: {
