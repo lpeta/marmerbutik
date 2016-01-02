@@ -79,6 +79,23 @@
     $('.popup .content').html(innerHtml);
   }
 
+  function formIsValid(name, email, message) {
+    return nameIsValid(name) && emailIsValid(email) && messageIsValid(message);
+  }
+
+  function nameIsValid(name) {
+    return name.length > 0;
+  }
+
+  function emailIsValid(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  function messageIsValid(message) {
+    return message.length > 0;
+  }
+
   // Popup toggler
   $('.slick-slide').on('click', 'img', function(e) {
     e.preventDefault();
@@ -114,7 +131,7 @@
     var email = $('input[name="email"]').val();
     var message = $('textarea[name="message"]').val();
 
-    if(name.length > 0 && email.length > 0 && message.length > 0) {
+    if(formIsValid(name, email, message)) {
       var formData = {
         name: name,
         email: email,
@@ -135,13 +152,13 @@
       });
     }
     else {
-      if(name.length < 1) {
+      if(!nameIsValid(name)) {
         $('input[name="name"]').addClass('error');
       }
-      if(email.length < 1) {
+      if(!emailIsValid(email)) {
         $('input[name="email"]').addClass('error');
       }
-      if(message.length < 1) {
+      if(!messageIsValid(message)) {
         $('textarea[name="message"]').addClass('error');
       }
     }
