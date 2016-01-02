@@ -80,10 +80,6 @@
     $('.popup .content').html(innerHtml);
   }
 
-  function formIsValid(name, email, message) {
-    return nameIsValid(name) && emailIsValid(email) && messageIsValid(message);
-  }
-
   function nameIsValid(name) {
     return name.length > 0;
   }
@@ -95,6 +91,10 @@
 
   function messageIsValid(message) {
     return message.length > 0;
+  }
+
+  function formIsValid(name, email, message) {
+    return nameIsValid(name) && emailIsValid(email) && messageIsValid(message);
   }
 
   // Popup toggler
