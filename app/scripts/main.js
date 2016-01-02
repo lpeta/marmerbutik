@@ -30,7 +30,7 @@
   var html = items.map(function(item) {
     return '' +
       '<div>' +
-        '<img src="/images/carousel/car_' + item.id + '.png"' +
+        '<img src="images/carousel/car_' + item.id + '.png"' +
              'alt="' + item.title + '"' +
              'data-id="' + item.id + '">' +
       '</div>';
@@ -73,7 +73,7 @@
 
     var innerHtml = '' +
       '<h2>' + item.title + '</h2>' +
-      '<img src="/images/carousel/car_' + id + '.png" alt="' + item.title + '">' +
+      '<img src="images/carousel/car_' + id + '.png" alt="' + item.title + '">' +
       '<p>' + item.description + '</p>';
 
     $('.popup .content').html(innerHtml);
