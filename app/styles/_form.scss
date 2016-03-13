@@ -31,10 +31,11 @@ textarea {
 
 button {
   color: $white;
+  border:none;
   padding: 20px;
   cursor: pointer;
   font-size: 1.3em;
-  background: $brown;
+  background: $green;
   @include transition(background .5s ease-in-out);
 
   .fa {
@@ -46,7 +47,7 @@ button:hover,
 button:focus,
 button:active {
   outline: none;
-  background: $light-brown;
+  background: $light-green;
 }
 
 .form-error,

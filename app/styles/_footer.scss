@@ -1,6 +1,6 @@
 footer {
-  color: $brown;
-  background: $extra-light-brown;
+  color: $light-brown;
+  background: $extra-light-grey;
 
   ul {
     width: 430px;
@@ -11,16 +11,20 @@ footer {
         padding: 5px;
         display: block;
       }
+      i {
+        font-size: 1px;
+
+      }
     }
   }
 }
 
 .copyright{
   padding: 5px;
-  color: $white;
+  color: $light-brown;
   margin: 0 auto;
   font-size: 0.8em;
-  background: $brown;
+  background: $extra-light-grey;
 }
 
 @media screen and (max-width: 450px) {

@@ -6,25 +6,25 @@
   // Carousel
   var items = [{
     id: 1,
-    title: '1',
-    description: 'Cuba esculpida em pedra natural de rio.'
+    title: 'marmerbutik',
+    description: 'Cubas de apoio em mármore ou escupida em pedra natural de rio.'
   }, {
     id: 2,
-    title: '2',
-    description: 'Cuba esculpida em pedra natural de rio.'
+    title: 'marmerbutik',
+    description: 'Cubas de apoio em mármore ou escupida em pedra natural de rio.'
   }, {
     id: 3,
-    title: '3',
-    description: 'Cuba esculpida em pedra natural de rio.'
+    title: 'marmerbutik',
+    description: 'Cubas de apoio em mármore ou escupida em pedra natural de rio.'
   }, {
     id: 4,
-    title: '4',
-    description: 'Cuba esculpida em pedra natural de rio.'
+    title: 'marmerbutik',
+    description: 'Cubas de apoio em mármore ou escupida em pedra natural de rio.'
 
   }, {
     id: 5,
-    title: '5',
-    description: 'Cuba esculpida em pedra natural de rio.'
+    title: 'marmerbutik',
+    description: 'Cubas de apoio em mármore ou escupida em pedra natural de rio.'
   }];
 
 
