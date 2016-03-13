@@ -140,7 +140,7 @@
       };
 
       $.ajax({
-        url: '//formspree.io/leonardopeta@live.co.uk',
+        url: '//formspree.io/marmerbutik@gmail.com',
         method: 'POST',
         data: formData,
         dataType: 'json'
